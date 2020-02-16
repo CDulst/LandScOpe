@@ -32,20 +32,20 @@ class Post {
     this.likes += 1;
   }
 
+  updateMood(moodkey){
+    this.mood[moodkey] += 1;
+  }
+
+  decreaseMood(moodkey){
+    this.mood[moodkey] -= 1;
+  }
+
   removeLike(){
     this.likes -= 1;
   }
 
   addComment(user,content){
   this.comments.push(new Comment({user,content}));
-  }
-
-  get getLikes(){
-    return this.likes;
-  }
-
-  get getComments(){
-    return this.comments;
   }
 
   get commentsLength(){
@@ -68,12 +68,12 @@ decorate(Post, {
   addlike: action,
   removeLike: action,
   addComment: action,
-  getLikes: computed,
-  getComments: computed,
+  updateMood: action,
+  decreaseMood: action,
   commentsLength: computed
 });
 
 configure({enforceActions: 'observed'});
 
-const post = new Post();
-export default post;
+
+export default Post;
