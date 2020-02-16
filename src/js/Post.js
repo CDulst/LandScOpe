@@ -1,3 +1,4 @@
+import Comment from './Comment.js';
 import {observable, decorate, configure, action, computed} from 'mobx';
 
 

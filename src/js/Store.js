@@ -1,4 +1,4 @@
-import Message from './Message';
+import Post from './Post';
 import {observable, decorate, configure, action, computed} from 'mobx';
 
 class Store {
@@ -8,8 +8,8 @@ class Store {
   }
 
 
-  addPost(content, user) {
-    this.messages.push(new Message({content, user}));
+  addPost(user,picture,categorie,location,description,tags) {
+  this.posts.push(new Post({user,picture,categorie,location,description,tags}));
   }
 
 }
