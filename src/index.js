@@ -1,5 +1,5 @@
 import './style.css';
-import {autorun, action, decorate} from 'mobx';
+import {autorun} from 'mobx';
 import store from './js/Store';
 
 

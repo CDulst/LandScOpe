@@ -1,3 +1,6 @@
+@import './assets/css/normalize.css';
+@import './assets/css/header.css';
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -10,8 +13,11 @@ html {
   box-sizing: inherit;
 }
 /* stylelint-enable */
-/*
-body  {
 
+body {
+  font-family: Helvetica, Arial, sans-serif;
 }
-*/
+
+button{
+  all:unset;
+}
