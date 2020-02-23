@@ -24,6 +24,12 @@ module.exports = (env, {mode}) => {
           }
         },
         {
+          test: /\.(woff|woff2)$/,
+          use: {
+            loader: 'url-loader',
+          },
+        },
+        {
           test: /\.html$/,
           use: [
             {

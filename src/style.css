@@ -1,6 +1,18 @@
 @import './assets/css/normalize.css';
 @import './assets/css/header.css';
+@import './assets/css/namecard.css';
+@import './assets/css/landscape.css';
+@import './assets/css/comment.css';
+@import './assets/css/undersection.css';
+@import './assets/css/mood.css';
+@import './assets/css/inputcomment.css';
+@import './assets/css/layoutdesktop.css';
 
+@font-face {
+  font-family: 'Montserrat';
+  src:url("assets/fonts/Montserrat-Bold.woff2") format('woff2')
+      ,url("assets/fonts/Montserrat-Bold.woff") format('woff');
+}
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -18,6 +30,6 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-button{
-  all:unset;
+button {
+  all: unset;
 }

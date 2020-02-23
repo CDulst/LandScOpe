@@ -8,8 +8,8 @@ class Store {
   }
 
 
-  addPost(user,picture,categorie,location,description,tags) {
-  this.posts.push(new Post({user,picture,categorie,location,description,tags}));
+  addPost(user, picture, categorie, location, description, tags) {
+    this.posts.push(new Post({user, picture, categorie, location, description, tags}));
   }
 
 }
