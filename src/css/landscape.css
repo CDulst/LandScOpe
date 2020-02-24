@@ -1,5 +1,5 @@
 .landscape {
-  background: url("/assets/png/landscape_example2.png") center;
+  background-position: center;
   background-size: cover;
   height: 70vh;
   display: flex;
@@ -58,6 +58,7 @@
 
 .location__location {
   font-size: 1.5rem;
+  font-weight: 600;
   font-family: "Montserrat";
   margin-top: 1rem;
   color: white;
@@ -78,18 +79,23 @@
   text-orientation: upright;
   font-size: 2rem;
   color: white;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 2px black;
   margin-left: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .nature__wrapper{
   display: flex;
   align-items: flex-end;
+  
 }
 
 .tags__wrapper {
   display: flex;
+  margin-bottom:2rem;
+  font-weight: 600;
 }
 
 .tag__wrapper {
@@ -104,7 +110,7 @@
 .tag__para {
   font-family: "Montserrat";
   color: white;
-  -webkit-text-stroke: 0.5px black;
+  -webkit-text-stroke: 1px black;
 }
 
 @media only screen and (min-width: 1200px) {

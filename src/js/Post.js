@@ -73,6 +73,8 @@ class Post {
     return this.comments.length;
   }
 
+  
+
 
 }
 
