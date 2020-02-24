@@ -1,5 +1,5 @@
 .landscape {
-  background: url("../png/landscape_example.png") center;
+  background: url("/assets/png/landscape_example.png") center;
   background-size: cover;
   height: 70vh;
   display: flex;

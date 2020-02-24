@@ -1,17 +1,17 @@
-@import './assets/css/normalize.css';
-@import './assets/css/header.css';
-@import './assets/css/namecard.css';
-@import './assets/css/landscape.css';
-@import './assets/css/comment.css';
-@import './assets/css/undersection.css';
-@import './assets/css/mood.css';
-@import './assets/css/inputcomment.css';
-@import './assets/css/layoutdesktop.css';
+@import 'css/normalize.css';
+@import 'css/header.css';
+@import 'css/namecard.css';
+@import 'css/landscape.css';
+@import 'css/comment.css';
+@import 'css/undersection.css';
+@import 'css/mood.css';
+@import 'css/inputcomment.css';
+@import 'css/layoutdesktop.css';
 
 @font-face {
   font-family: 'Montserrat';
-  src:url("assets/fonts/Montserrat-Bold.woff2") format('woff2')
-      ,url("assets/fonts/Montserrat-Bold.woff") format('woff');
+  src:url("/public/fonts/Montserrat-Bold.woff2") format('woff2')
+      ,url("/public/fonts/Montserrat-Bold.woff") format('woff');
 }
 html {
   box-sizing: border-box;

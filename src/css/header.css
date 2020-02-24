@@ -1,5 +1,5 @@
 header {
-  background-image: url('../png/header_background.png');
+  background-image: url('/assets/png/header_background.png');
   width: 100%;
 }
 
@@ -98,15 +98,15 @@ header {
   }
 
   .home {
-    background-image: url("../svg/homeicon.svg");
+    background-image: url("/assets/svg/homeicon.svg");
   }
 
   .explore {
-    background-image: url("../svg/explorericon.svg")
+    background-image: url("/assets/svg/explorericon.svg")
   }
 
   .collection {
-    background-image: url("../svg/collectionicon.svg")
+    background-image: url("/assets/svg/collectionicon.svg")
   }
 
   .header__wrapper {

@@ -1,14 +1,10 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import './style.css';
-import {autorun} from 'mobx';
-import store from './js/Store';
 
+const App = () => {
+  return <p>React Startproject</p>
+}
 
+ReactDOM.render(<App />, document.getElementById('root'));
 
-
-const init = () => {
-  window.store = store;
-  autorun(() => {
-  });
-};
-
-init();
