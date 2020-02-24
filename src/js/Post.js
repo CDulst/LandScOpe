@@ -65,8 +65,8 @@ class Post {
     this.likes -= 1;
   }
 
-  addComment(user, content) {
-    this.comments.push(new Comment({user, content}));
+  addComment(u, con) {
+    this.comments.push(new Comment({user: u, content:con}));
   }
 
   get commentsLength() {

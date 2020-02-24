@@ -10,8 +10,11 @@ class Store {
       new Post({user: new User({name: "SilenceOfTheTown", description: "A proud new york photographer", pic: "assets/svg/account-icon3.svg"}), picture: 'assets/webp/landscape_example2.webp', categorie: 'City Life', location: 'USA, new york', description: 'Central Park and snow', tags: ['park', 'snow']}),
       new Post({user: new User({name: "EpicGamer420", description: "A gamer by heart", pic: "assets/svg/account-icon2.svg"}), picture: 'assets/webp/landscape_example3.webp', categorie: 'Digital', location: 'Uncharted 4', description: 'Hanging on tight', tags: ['adventure', 'digital', 'desert', 'village']})
     ];
+    
+
     this.currentIndex = 0;
     this.currentPost = this.posts[0];
+    this.commentMessage = "";
   }
 
 
@@ -44,7 +47,13 @@ class Store {
     store.changeCurrent(store.posts[store.currentIndex])
   }
 
+  changeCommentMessage(comment){
+    store.commentMessage = comment;
+    }
+
 }
+
+
 
 decorate (Store, {
   posts: observable,
@@ -53,7 +62,9 @@ decorate (Store, {
   addPost: action,
   changeCurrent: action,
   CurrentPostUp: action,
-  CurrentPostDown: action
+  CurrentPostDown: action,
+  commentMessage: observable,
+  changeCommentMessage: action
 });
 
 configure({enforceActions: 'observed'});

@@ -131,14 +131,14 @@ const App = () => {
   <div className = "comment__wrappers nm__wrapper">
   <div className = "comment__wrapper">
   <img className = "comment__image" src="assets/svg/account-icon.svg" alt="account"/>
-  <p className = "comment__name"> comment.user </p>
+  <p className = "comment__name"> {comment.user} </p>
   </div>
-  <p className = "comment__text"> comment.content </p>
+  <p className = "comment__text"> {comment.content} </p>
   </div>
   <button className = "comment__button">
   <div className = "comment__wrappers">
   <img className = "comment__like" src="assets/svg/heart.svg" alt=""/>
-  <p className = "like__number">comment.likes</p>
+  <p className = "like__number">{comment.likes}</p>
   </div>
 </button>
   </div>
@@ -147,16 +147,28 @@ const App = () => {
   </article>
   <article className = "writecomment">
   <h3 className = "hidden">Write a comment</h3>
-  <form className = "writecomment__form" action="" method = "GET">
+  <form onSubmit={e => submitcheck(e)} className = "writecomment__form" action="" method = "GET">
   <label className = "writecomment__label" for=""> Write a comment </label>
-  <input className = "writecomment__input" type="text" name="comment" id="comment"/>
-  <button className= "writecomment__button">Send 	&rarr;</button>
+  <input className = "writecomment__input" type="text" name="comment" id="comment" value = {store.commentMessage} onChange= {e => handleChangeinput(e)} />
   </form>
   </article>
   </section>
   </main>
     </>
   ))
+}
+
+const handleChangeinput = e =>{
+  console.log(e.target.value);
+  store.changeCommentMessage(e.target.value);
+}
+
+const submitcheck = e =>{
+  e.preventDefault();
+  if (store.commentMessage != ""){
+    store.currentPost.addComment("Casey Dulst",store.commentMessage);
+    store.changeCommentMessage("");
+  }
 }
 
 
