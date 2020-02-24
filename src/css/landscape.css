@@ -1,5 +1,5 @@
 .landscape {
-  background: url("/assets/png/landscape_example.png") center;
+  background: url("/assets/png/landscape_example2.png") center;
   background-size: cover;
   height: 70vh;
   display: flex;
@@ -66,7 +66,7 @@
 }
 
 .arrow {
-  width: 3rem;
+  width: 4rem;
 }
 
 .arrow__wrapper {
@@ -105,5 +105,38 @@
   font-family: "Montserrat";
   color: white;
   -webkit-text-stroke: 0.5px black;
+}
+
+@media only screen and (min-width: 1200px) {
+  .location__name {
+    font-size:4rem;
+
+  }
+  .icon__image {
+    width: 4rem;
+  }
+  
+  .icon__heart {
+    width: 2.5rem;
+  }
+  .icon__comment {
+    width: 3rem;
+  }
+  .location__location {
+    font-size: 3rem;
+  }
+  .naturelife {
+    font-size: 3.5rem;
+  }
+  .arrow {
+    width: 6rem;
+    cursor: pointer;
+  }
+  .arrow:hover{
+    width: 8rem;
+  }
+  .tag__para {
+    font-size:2rem;
+  }
 
 }

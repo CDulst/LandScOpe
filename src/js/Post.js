@@ -2,6 +2,40 @@ import Comment from './Comment.js';
 import {observable, decorate, configure, action, computed} from 'mobx';
 
 
+
+const MOODS = [
+  [
+    "Confident","assets/svg/moods/Confident.svg"
+  ],
+  [
+    "Dreamy","assets/svg/moods/Dreamy.svg"
+  ],
+  [
+    "Empowered","assets/svg/moods/Empowered.svg"
+  ],
+  [
+    "Excited","assets/svg/moods/Excited.svg"
+  ],
+  [
+    "Lonely","assets/svg/moods/Lonely.svg"
+  ],
+  [
+    "Overwhelmed","assets/svg/moods/Overwhelmed.svg"
+  ],
+  [
+    "Relaxed","assets/svg/moods/Relaxed.svg"
+  ],
+  [
+    "Romantic","assets/svg/moods/Romantic.svg"
+  ],
+  [
+    "Scared","assets/svg/moods/Scared.svg"
+  ],
+  
+    
+]
+
+
 class Post {
   constructor ({user, picture, categorie, location, likes = 0, description, tags}) {
     this.user = user;
@@ -12,28 +46,15 @@ class Post {
     this.tags = tags;
     this.likes = likes;
     this.comments = [];
-    this.mood = {
-      Unsettled: 0,
-      Dreamy: 0,
-      Scared: 0,
-      Relaxed: 0,
-      Excited: 0,
-      Tense: 0,
-      Lonely: 0,
-      Romantic: 0,
-      Ominous: 0,
-      Empowered: 0,
-      Confident: 0,
-      Overwhelmed: 0,
-    };
+    this.mood = [];
   }
 
   addLike() {
     this.likes += 1;
   }
 
-  updateMood(moodkey) {
-    this.mood[moodkey] += 1;
+  updateMood(mood) {
+    this.mood.push(mood);
   }
 
   decreaseMood(moodkey) {
@@ -76,4 +97,4 @@ decorate(Post, {
 configure({enforceActions: 'observed'});
 
 
-export default Post;
+export {MOODS,Post};

@@ -9,8 +9,8 @@
 
   main {
     display: grid;
-    grid-template-columns: 75% 25%;
-    grid-template-rows: 25% 70%;
+    grid-template-columns: 76% 24%;
+    grid-template-rows: 15% 85%;
   }
 
   .post__by {
@@ -25,7 +25,9 @@
   }
 
   .commentmood {
-    overflow: scroll;
+    overflow-y: auto;
+    height:50%;
+    
   }
 
 }

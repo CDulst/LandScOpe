@@ -1,4 +1,4 @@
-import Post from './Post.js';
+import {Post, MOODS} from './Post.js';
 
 test ('create new Post', () => {
   const post = new Post({user: 'bob', picture: 'test', categorie: 'test', location: 'test', description: 'test', tags: ['test', 'test2']});
@@ -30,16 +30,6 @@ test ('comment added to post', () => {
   post.addComment({user: 'bob', comment: 'test'});
   expect(post.comments.length).toBe(1);
 });
-test ('point assigned to mood', () => {
-  const post = new Post({user: 'bob', picture: 'test', categorie: 'test', location: 'test', description: 'test', tags: ['test', 'test2']});
-  post.updateMood('Relaxed');
-  expect(post.mood['Relaxed']).toBe(1);
-});
-test ('point removed from mood', () => {
-  const post = new Post({user: 'bob', picture: 'test', categorie: 'test', location: 'test', description: 'test', tags: ['test', 'test2']});
-  post.updateMood('Dreamy');
-  post.decreaseMood('Dreamy');
-  expect(post.mood['Dreamy']).toBe(0);
-});
+
 
 

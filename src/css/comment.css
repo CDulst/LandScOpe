@@ -39,3 +39,8 @@
   bottom: 4rem;
   left: 2rem;
 }
+
+.comment__button:hover{
+  cursor:pointer;
+  position:relative;
+}

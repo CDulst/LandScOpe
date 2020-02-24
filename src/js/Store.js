@@ -1,4 +1,4 @@
-import Post from './Post';
+import {Post, MOODS} from './Post.js';
 import {observable, decorate, configure, action, computed} from 'mobx';
 
 class Store {

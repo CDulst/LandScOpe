@@ -1,7 +1,10 @@
 header {
   background-image: url('/assets/png/header_background.png');
   width: 100%;
+  padding: 1.4rem 0;
 }
+
+
 
 .hidden {
   display: none;
@@ -41,6 +44,15 @@ header {
 
 .account__wrapper {
   margin-top: 0.2rem;
+}
+.nav__link:hover{
+  text-decoration:underline;
+}
+.account__upload:hover{
+  background-color:rgb(86, 62, 97);
+}
+.postby__link:hover{
+  background-color:rgb(86, 62, 97);
 }
 
 @media only screen and (min-width: 768px) {
