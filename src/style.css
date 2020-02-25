@@ -13,6 +13,8 @@
   src:url("/public/fonts/Montserrat-Bold.woff2") format('woff2')
       ,url("/public/fonts/Montserrat-Bold.woff") format('woff');
 }
+
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -32,4 +34,5 @@ body {
 
 button {
   all: unset;
+  cursor:pointer;
 }

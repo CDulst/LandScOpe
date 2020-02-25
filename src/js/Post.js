@@ -88,7 +88,7 @@ decorate(Post, {
   likes: observable,
   comments: observable,
   mood: observable,
-  addlike: action,
+  addLike: action,
   removeLike: action,
   addComment: action,
   updateMood: action,

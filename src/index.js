@@ -59,12 +59,12 @@ const App = () => {
     <div className = "postby__wrapper">
     <p className = "postby__name"> {store.currentPost.user.name}</p>
     <p className = "postby__title">{store.currentPost.user.description}</p>
-    <a className = "postby__link" href=" "> follow </a>
+    <a className = "postby__link" href="d"> follow </a>
     </div>
   </div>
   <div className = "like__wrappers">
   <a className = "postby__link linkcollect" href="d">Add to collection</a>
-  <a className = "postby__link linkcollect linkheart" href="d"><p class = "like">&hearts; Like</p></a>
+  <button onClick = {e => store.currentPost.addLike()} className = "postby__link linkcollect linkheart"  href="d"><p class = "like">&hearts; Like</p></button>
   </div>
   </section>
   <section className = "landscape" style = {{backgroundImage: `url(${store.currentPost.picture})`}}>
@@ -135,7 +135,7 @@ const App = () => {
   </div>
   <p className = "comment__text"> {comment.content} </p>
   </div>
-  <button className = "comment__button">
+  <button className = "comment__button" onClick= {e => handleClickComboButton(e, comment)}>
   <div className = "comment__wrappers">
   <img className = "comment__like" src="assets/svg/heart.svg" alt=""/>
   <p className = "like__number">{comment.likes}</p>
@@ -161,6 +161,10 @@ const App = () => {
 const handleChangeinput = e =>{
   console.log(e.target.value);
   store.changeCommentMessage(e.target.value);
+}
+
+const handleClickComboButton = (e,item) =>{
+item.addLike();
 }
 
 const submitcheck = e =>{
