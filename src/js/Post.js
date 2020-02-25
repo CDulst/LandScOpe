@@ -46,15 +46,28 @@ class Post {
     this.tags = tags;
     this.likes = likes;
     this.comments = [];
-    this.mood = [];
+    this.mood = {
+      Unsettled: 0,
+      Dreamy: 0,
+      Scared: 0,
+      Relaxed: 0,
+      Excited: 0,
+      Tense: 0,
+      Lonely: 0,
+      Romantic: 0,
+      Ominous: 0,
+      Empowered: 0,
+      Confident: 0,
+      Overwhelmed: 0,
+    };
   }
 
   addLike() {
     this.likes += 1;
   }
 
-  updateMood(mood) {
-    this.mood.push(mood);
+  updateMood(moodkey) {
+    this.mood[moodkey] += 1;
   }
 
   decreaseMood(moodkey) {
@@ -72,6 +85,8 @@ class Post {
   get commentsLength() {
     return this.comments.length;
   }
+
+
 
   
 

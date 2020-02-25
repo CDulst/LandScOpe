@@ -50,6 +50,8 @@ class Store {
   changeCommentMessage(comment){
     store.commentMessage = comment;
     }
+  
+    
 
 }
 

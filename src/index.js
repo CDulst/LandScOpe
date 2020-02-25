@@ -113,13 +113,13 @@ const App = () => {
   <h3 className = " cm__title mood__title"> This landscape makes me feel </h3>
   <p className = "mood__points"><span class = "mood__number">3</span> Points left</p>
   {MOODS.map(mood => (
-    <button className = "buttonall">
+    <button className = "buttonall" onClick={ e => store.currentPost.updateMood(mood[0])}>
     <div className = "mood__item">
     <div className = "item__wrapper">
     <img className = "item__emoji" src={mood[1]} alt=""/>
   <p className = "item__title">{mood[0]}</p>
     </div>
-    <p className = "item__number">0</p>
+    <p className = "item__number">{store.currentPost.mood[mood[0]]}</p>
     </div>
     </button>
   ))}
