@@ -1,4 +1,4 @@
-import {Post, MOODS} from './Post.js';
+import {Post} from './Post.js';
 
 test ('create new Post', () => {
   const post = new Post({user: 'bob', picture: 'test', categorie: 'test', location: 'test', description: 'test', tags: ['test', 'test2']});

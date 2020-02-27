@@ -1,4 +1,4 @@
-import Comment from './Comment.js';
+import Comment from './Comment';
 
 test ('create new comment', () => {
   const comment = new Comment({user: 'bob', content: 'test'});

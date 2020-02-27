@@ -1,5 +1,5 @@
-import store from './Store.js';
-import User from './User'
+import store from './Store';
+import User from '../models/User';
 
 
 test ('post added to store', () => {
