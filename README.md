@@ -1,68 +1,76 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# LandscOpe
+App waar je imposante landschap foto's van tijdens je reizen, gamesessies of shots die je verrasten tijdens
+het kijken van een film kan delen met de wereld.
 
-## Available Scripts
+## De app is bedoelt voor 
 
-In the project directory, you can run:
+* Gewoon liefhebbers
+* Game environment artiesten
+* Filmmakers
+* CGI artiesten
+* fotografie enthusiastellingen
+* Reizigers
+* Digital artists
+* .....
 
-### `yarn start`
+## Ze zouden de app kunnen gebruiken voor 
+ 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Inspiratie opzoeken
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+* Inspiratie voor artiesten die een landschap willen
+* foto's verzamelen voor moodboards
+* Reizigers die op zoek zijn naar hun volgende reis bestemming.
 
-### `yarn test`
+### Foto's delen met de wereld
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* De imposante foto's van landschappen die je op je reis bent tegengekomen.
 
-### `yarn build`
+![image](https://user-images.githubusercontent.com/56590727/74591162-d7022a00-5015-11ea-807b-81328cdd9465.png)
+![image](https://user-images.githubusercontent.com/56590727/74591166-dec1ce80-5015-11ea-84de-b17ca25a4df1.png)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* digitale environments die je bent tegengekomen tijdens het spelen van een game.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+![image](https://user-images.githubusercontent.com/56590727/74591200-1597e480-5016-11ea-9a33-549ce9d88c10.png)
+![image](https://user-images.githubusercontent.com/56590727/74591210-20eb1000-5016-11ea-8b60-97f8ab1038a0.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* die WOW landscape shots die je zag tijdens het kijken van een film
+![image](https://user-images.githubusercontent.com/56590727/74591316-47f61180-5017-11ea-81aa-6697eb42ab8b.png)
+![image](https://user-images.githubusercontent.com/56590727/74591318-4d535c00-5017-11ea-9205-afa22eee74d0.png)
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Voorlopige features
+### Account aanmaken
+### Aanduiden welke soort landschappen je in je feed wil zien.
+### Landschap posten onder juiste categorie
+#### Categorieen
+* Digital
+* Movie shots
+* One with nature
+* Citylife
+* Historical impact
+### Tag toevoegen
+#### Voorbeeld tag
+* Monument
+* Rivier
+* Bergen
+* Waterfall
+### Liken van post
+### Comment onder post
+### Mogelijkheid opslaan inspiratie
+### This landscape makes me feel.... 3 feelings aanduiden in lijst
+#### Voorbeelden
+* Unsettled
+* Dreamy
+* Scared
+* Calm
+* Excited
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Het werk zo'n beetje als op CGSOCIETY
+Daar kan je 4 punten aanduiden wat je het beste vind aan een digitaal werk
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![image](https://user-images.githubusercontent.com/56590727/74591508-efc00f00-5018-11ea-9b14-59540a48a6c7.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Filteren op het soort werk die je wil zien
+Waar je image verschijnt als de gebruiker gaat filteren op mood hangt af van welke feel het meest werd aangeduid door andere gebruikers bij je post.
+ 
