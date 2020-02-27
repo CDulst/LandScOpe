@@ -1,5 +1,5 @@
-import {Post, MOODS} from './Post.js';
-import User from './User.js';
+import {Post, MOODS} from '../models/Post';
+import User from '../models/User';
 import {observable, decorate, configure, action, computed} from 'mobx';
 
 class Store {
