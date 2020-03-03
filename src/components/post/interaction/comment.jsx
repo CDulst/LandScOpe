@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {useObserver} from 'mobx-react-lite';
+import PropTypes from 'prop-types';
 const Comment = ({comment, user, content, likes}) => {
 
 const handleClickComboButton = (e,item) =>{
@@ -27,4 +28,10 @@ return useObserver(() => (
 </>))
 }
 
+Comment.propTypes = {
+  comment: PropTypes.object.isRequired,
+  user: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+  likes: PropTypes.number.isRequired,
+};
 export default Comment;

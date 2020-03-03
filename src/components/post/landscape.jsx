@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {useObserver} from 'mobx-react-lite';
+import PropTypes from 'prop-types';
 const Landscape = ({postinfo, posttags, store}) => {
 return useObserver(() => (
 <>
@@ -36,7 +37,7 @@ return useObserver(() => (
   <p className = "naturelife"> {postinfo.categorie} </p>
   <div className = "tags__wrapper">
   {posttags.map(tag => (
-    <div className = "tag__wrapper">
+    <div className = "tag__wrapper" key = {tag}>
     <img className = "tag__image" src="assets/svg/tag.svg" alt=""/>
     <p className = "tag__para"> {tag} </p>
     </div>
@@ -46,5 +47,12 @@ return useObserver(() => (
   </section>
 </>))
 }
+
+Landscape.propTypes = {
+  postinfo: PropTypes.object.isRequired,
+  posttags: PropTypes.array.isRequired,
+  store: PropTypes.object.isRequired
+};
+
 
 export default Landscape;

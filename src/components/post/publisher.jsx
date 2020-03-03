@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {useObserver} from 'mobx-react-lite';
+import PropTypes from 'prop-types';
 const Publisher = ({publisher, currentpost}) => {
 return useObserver(() => (
 <>
@@ -16,10 +17,14 @@ return useObserver(() => (
   </div>
   <div className = "like__wrappers">
   <a className = "postby__link linkcollect" href="d">Add to collection</a>
-  <button onClick = {e => currentpost.addLike()} className = "postby__link linkcollect linkheart"  href="d"><p class = "like">&hearts; Like</p></button>
+  <button onClick = {e => currentpost.addLike()} className = "postby__link linkcollect linkheart"  href="d"><p className = "like">&hearts; Like</p></button>
   </div>
   </section>
 </>))
 }
+Publisher.propTypes = {
+  currentpost: PropTypes.object.isRequired,
+  store: PropTypes.object
+};
 
 export default Publisher;

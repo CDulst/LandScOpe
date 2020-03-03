@@ -5,6 +5,7 @@ import {MOODS} from '../models/Post'
 import Publisher from './post/publisher';
 import Landscape from './post/landscape';
 import Interaction from './post/interaction';
+import PropTypes from 'prop-types';
 const Post= ({currentpost, store}) => {
 
     
@@ -18,5 +19,13 @@ const Post= ({currentpost, store}) => {
 </main>
   </>
     ))
+
 }
+
+Post.propTypes = {
+  currentpost: PropTypes.object,
+  store: PropTypes.object
+};
+
+
 export default Post;

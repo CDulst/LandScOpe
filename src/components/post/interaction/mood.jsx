@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {useObserver} from 'mobx-react-lite';
+import PropTypes from 'prop-types';
 const Mood = ({currentpost, moodemoji,moodtitle,moodnumber}) => {
 return useObserver(() => (
 <>
@@ -12,8 +13,15 @@ return useObserver(() => (
     </div>
     <p className = "item__number">{moodnumber}</p>
     </div>
-    </button>
+</button>
 </>))
 }
+
+Mood.propTypes = {
+  currentpost: PropTypes.object.isRequired,
+  moodemoji: PropTypes.string.isRequired,
+  moodtitle: PropTypes.string.isRequired,
+  moodnumber: PropTypes.number.isRequired
+};
 
 export default Mood;
