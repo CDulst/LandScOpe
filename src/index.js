@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 
 
 
-ReactDOM.render(<App store = {store} />, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));
 
 
 

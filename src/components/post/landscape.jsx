@@ -2,10 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {useObserver} from 'mobx-react-lite';
 import PropTypes from 'prop-types';
-const Landscape = ({postinfo, posttags, store}) => {
+import {useStores} from "../../hooks/index";
+const Landscape = () => {
+  const {dataStore} = useStores();
+  const postinfo = dataStore.currentPost;
+  const posttags = postinfo.tags;
 return useObserver(() => (
 <>
-<section className = "landscape" style = {{backgroundImage: `url(${store.currentPost.picture})`}}>
+<section className = "landscape" style = {{backgroundImage: `url(${dataStore.currentPost.picture})`}}>
   <div className = "image__wrappers">
   <div className = "image__wrapper">
   <h2 className = "location__name">{postinfo.description}</h2>
@@ -30,8 +34,8 @@ return useObserver(() => (
   </div>
   </div>
   <div className = "image__wrappers arrow__wrapper">
-  <button onClick= {store.CurrentPostDown}><img className = "arrow" src="assets/svg/arrowleft.svg" alt=""/></button>
-  <button onClick= {store.CurrentPostUp}><img className = "arrow" src="assets/svg/arrowright.svg" alt=""/></button>
+  <button onClick= {dataStore.CurrentPostDown}><img className = "arrow" src="assets/svg/arrowleft.svg" alt=""/></button>
+  <button onClick= {dataStore.CurrentPostUp}><img className = "arrow" src="assets/svg/arrowright.svg" alt=""/></button>
   </div>
   <div className = "nature__wrapper">
   <p className = "naturelife"> {postinfo.categorie} </p>
