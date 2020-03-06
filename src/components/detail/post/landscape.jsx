@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import {useObserver} from 'mobx-react-lite';
 import PropTypes from 'prop-types';
 import {useStores} from "../../../hooks/index";
+import {Link} from "react-router-dom"
 const Landscape = () => {
   const {dataStore} = useStores();
   const postinfo = dataStore.currentPost;
@@ -34,8 +35,8 @@ return useObserver(() => (
   </div>
   </div>
   <div className = "image__wrappers arrow__wrapper">
-  <button onClick= {dataStore.CurrentPostDown}><img className = "arrow" src="assets/svg/arrowleft.svg" alt=""/></button>
-  <button onClick= {dataStore.CurrentPostUp}><img className = "arrow" src="assets/svg/arrowright.svg" alt=""/></button>
+  <Link to={dataStore.previouskey}><img className = "arrow" src="assets/svg/arrowleft.svg" alt=""/></Link>
+  <Link to= {dataStore.nextkey}><img className = "arrow" src="assets/svg/arrowright.svg" alt=""/></Link>
   </div>
   <div className = "nature__wrapper">
   <p className = "naturelife"> {postinfo.categorie} </p>

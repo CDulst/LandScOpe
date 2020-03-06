@@ -37,13 +37,14 @@ const MOODS = [
 
 
 class Post {
-  constructor ({user, picture, categorie, location, likes = 0, description, tags}) {
+  constructor ({user, picture, categorie, location, likes = 0, description, tags, key}) {
     this.user = user;
     this.picture = picture;
     this.categorie = categorie;
     this.location = location;
     this.description = description;
     this.tags = tags;
+    this.key = key;
     this.likes = likes;
     this.comments = [];
     this.mood = {

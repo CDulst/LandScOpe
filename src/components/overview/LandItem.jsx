@@ -5,10 +5,10 @@ import {Link} from 'react-router-dom';
 
 
 const LandItem = ({post}) => {
-    return useObserver(() => (
+return useObserver(() => (
 <>
 <section className = "overview__item" style = {{backgroundImage: `url(${post.picture})`}}>
-<Link className = "overviewItem__container" to="/Detail">
+<Link className = "overviewItem__container" to={post.key}>
 <div className = "overviewItem__wrapper">
 <img src={post.user.pic} alt="account"/>
 <h3 className = "overviewItem__text overviewItem__title">{post.description} </h3>

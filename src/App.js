@@ -14,7 +14,7 @@ const App = () => {
   <Header/>
   <main className = "root content">
   <Switch>
-  <Route path = "/Detail">
+  <Route path = "/:key">
   <Detail/>
   </Route>
   <Route path = "/">
