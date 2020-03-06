@@ -1,0 +1,59 @@
+.overview{
+    display:flex;
+    flex-wrap:wrap;
+    height:95%;
+    overflow:scroll;
+    Z-index:3;
+    width:100vw;
+}
+::-webkit-scrollbar {
+    width: 0px; 
+    background: transparent;
+    }
+.hidden{
+    display:none;
+}
+.addButton__wrapper{
+    position: absolute;
+    top:90vh;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:10;
+    
+}
+.add__button{
+   color:white;
+   font-size:2rem;
+   background-color: rgba(75, 25, 115, 0.5);
+   padding: 0.5rem 4rem;
+   border:white solid 4px;
+   border-radius:2rem;
+}
+.addButton__span{
+    position: relative;
+    bottom:0.5rem;
+}
+.content{
+    background-image:url("/assets/png/namecard_background.png");
+    height:100vh;
+}
+
+@media only screen and (min-width: 764px) {
+    .overview{
+        display:flex;
+        flex-wrap:wrap;
+        height:88%;
+        overflow:scroll;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .overview{
+        display:flex;
+        flex-wrap:wrap;
+        height:92vh;
+        overflow:scroll;
+    }
+}
+

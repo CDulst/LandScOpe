@@ -7,6 +7,9 @@
 @import 'css/mood.css';
 @import 'css/inputcomment.css';
 @import 'css/layoutdesktop.css';
+@import 'css/overview.css';
+@import 'css/overviewItem.css';
+
 
 @font-face {
   font-family: 'Montserrat';
@@ -18,6 +21,8 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  height:100%;
+  overflow: hidden;
 }
 
 /* stylelint-disable */

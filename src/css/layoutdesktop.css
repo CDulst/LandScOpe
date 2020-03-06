@@ -10,7 +10,7 @@
   main {
     display: grid;
     grid-template-columns: 76% 24%;
-    grid-template-rows: 15% 130vh;
+    grid-template-rows: 20% 130vh;
   }
 
   .post__by {
@@ -26,7 +26,7 @@
 
   .commentmood {
     overflow-y: auto;
-    height:50%;
+    height:54%;
     
   }
 
