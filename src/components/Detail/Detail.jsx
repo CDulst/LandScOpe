@@ -1,7 +1,7 @@
 import React from 'react';
 import {useObserver} from 'mobx-react-lite';
-import Post from './detail/post';
-import {useStores} from "../hooks/index";
+import Post from './Post/Post';
+import {useStores} from "../../hooks/index";
 import{useParams} from "react-router-dom"
 import{Redirect} from "react-router-dom";
 const Detail = () => {

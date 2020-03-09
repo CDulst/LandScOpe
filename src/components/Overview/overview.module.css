@@ -35,10 +35,7 @@
     position: relative;
     bottom:0.5rem;
 }
-.content{
-    background-image:url("/assets/png/namecard_background.png");
-    height:100vh;
-}
+
 
 @media only screen and (min-width: 764px) {
     .overview{

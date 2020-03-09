@@ -1,0 +1,45 @@
+.commentmood {
+    background-image: url("/assets/png/namecard_background.png");
+  }
+  
+  .mood {
+    padding-top: 3rem;
+  }
+
+  .hidden{
+      display:none;
+  }
+  
+  .cm__title {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-family: "Montserrat";
+  }
+  
+  .mood__points {
+    text-align: right;
+    margin-top: 2rem;
+    font-family: "Montserrat";
+    font-size: 1.6rem;
+    color: white;
+    margin-right: 2rem;
+  }
+
+  .commentmood {
+    overflow-y: auto;
+    height:54%;
+    
+  }
+  
+  .mood__number {
+    font-size: 2.5rem;
+  }
+  
+  .comments__title {
+    border-bottom: solid 4px white;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+  
+  }
+  

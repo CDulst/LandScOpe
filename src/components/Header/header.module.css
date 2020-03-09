@@ -1,0 +1,147 @@
+header{
+    background-image: url("/assets/png/header_background.png");
+    width:100%;
+  }
+  .hidden{
+    display:none;
+  }
+  .nav__items{
+    display:none;
+  }
+  .messagebutton{
+    display:none;
+  }
+  .settingsbutton{
+    display:none;
+  }
+  .account__upload{
+    display:none;
+  }
+  .header__hamburger--large{
+    display:none;
+  }
+  .navigator{
+    padding:0rem 1rem;
+    display:flex;
+    justify-content:space-between;
+  
+  }
+  .header__logo{
+    position:relative;
+    top:1.4rem;
+  }
+  .account__wrapper{
+    margin-top:0.2rem;
+  }
+  .nav__link:hover{
+    text-decoration:underline;
+  }
+  .account__upload:hover{
+    background-color:rgb(86, 62, 97);
+  }
+  .postby__link:hover{
+    background-color:rgb(86, 62, 97);
+  }
+  
+  
+  @media only screen and (min-width: 768px){
+    .messagebutton{
+        display:block;
+    }
+    .settingsbutton{
+        display:block;
+    }
+    .account__wrapper{
+        display:flex;
+    }
+    .header__logo{
+      width:170%;
+      top:4rem;
+    }
+    .header__hamburger--img{
+        width:150%;
+        margin-left:2rem;
+    }
+    .navigator{
+        padding:0rem 1rem;
+        display:flex;
+        justify-content:space-between;
+    }
+    .account__img{
+        width:150%;
+    }
+  }
+  @media only screen and (min-width: 1024px){
+    .header__hamburger{
+        display:none;
+    }
+    .nav__items{
+        display:block;
+        display:flex;
+        align-items:center;
+    }
+    .nav__wrapper{
+        display:flex;
+        margin-left:1rem;
+        background-repeat: no-repeat;
+        background-position-x: 5rem;
+    }
+    .home{
+        background-image:url("/assets/svg/homeicon.svg");
+    }
+    .explore{
+        background-image:url("/assets/svg/explorericon.svg")
+    }
+    .collection{
+        background-image:url("/assets/svg/collectionicon.svg")
+    }
+    .header__wrapper{
+        display:flex;
+        align-items:center;
+        width:70rem;
+    }
+    .header__logo{
+        top:0rem;
+        width:100%;
+        margin:0 3rem;
+    }
+    .nav__item{
+        margin-left:3rem;
+        margin-top:1.5rem;
+        
+    }
+    .nav__link{
+        text-decoration:none;
+        color:white;
+        font-size:16px;
+        
+    }
+    .account__upload{
+        display:block;
+        font-size:20px;
+        text-decoration:none;
+        color:white;
+        margin-right:2rem;
+        border:white solid 2px;
+        padding:0.4rem 3rem;
+        border-radius:2rem;
+  
+    }
+    .accounts__wrappers{
+        display:flex;
+        align-items:center;
+    }
+  
+  }
+  @media only screen and (min-width: 1200px){
+    .account__wrappers{
+        display:flex;
+    }
+    .settings__wrapper{
+        margin-left:4rem;
+    }
+    .header__logo{
+        top:0.5rem;
+    
+    }
+  }

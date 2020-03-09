@@ -1,14 +1,4 @@
-@import 'css/normalize.css';
-@import 'css/header.css';
-@import 'css/namecard.css';
-@import 'css/landscape.css';
-@import 'css/comment.css';
-@import 'css/undersection.css';
-@import 'css/mood.css';
-@import 'css/inputcomment.css';
-@import 'css/layoutdesktop.css';
-@import 'css/overview.css';
-@import 'css/overviewItem.css';
+@import './reset.css';
 
 
 @font-face {
@@ -24,6 +14,8 @@ html {
   height:100%;
   overflow: hidden;
 }
+
+
 
 /* stylelint-disable */
 *,
@@ -41,3 +33,24 @@ button {
   all: unset;
   cursor:pointer;
 }
+
+@media only screen and (min-width: 1200px) {
+
+  body {
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    overflow: hidden;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 76% 24%;
+    grid-template-rows: 20% 130vh;
+  }
+
+  
+ 
+
+}
+

@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {useObserver} from 'mobx-react-lite';
-import {MOODS} from '../../models/Post'
-import Publisher from './post/publisher';
-import Landscape from './post/landscape';
-import Interaction from './post/interaction';
+import Publisher from './Publisher/Publisher';
+import Landscape from './Landscape/Landscape';
+import Interaction from './Interaction/Interaction';
 import PropTypes from 'prop-types';
 const Post= () => {
 
@@ -22,10 +21,6 @@ const Post= () => {
 
 }
 
-Post.propTypes = {
-  currentpost: PropTypes.object,
-  store: PropTypes.object
-};
 
 
 export default Post;

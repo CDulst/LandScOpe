@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {useObserver} from 'mobx-react-lite';
 import PropTypes from 'prop-types';
-import {useStores} from "../../../../hooks/index";
+import {useStores} from "../../../../../hooks/index";
+import style from "./input.module.css";
 
 const Inputcomment = () => {
   const {dataStore,uiStore} = useStores();
@@ -22,11 +23,11 @@ const handleChangeinput = e =>{
   }
 return useObserver(() => (
 <>
-<article className = "writecomment">
-  <h3 className = "hidden">Write a comment</h3>
-  <form onSubmit={e => submitcheck(e)} className = "writecomment__form" action="" method = "GET">
-  <label className = "writecomment__label" htmlFor="comment"> Write a comment </label>
-  <input className = "writecomment__input" type="text" name="comment" id="comment" value = {uiStore.commentMessage} onChange= {e => handleChangeinput(e)} />
+<article className = {style.writecomment}>
+  <h3 className = {style.hidden}>Write a comment</h3>
+  <form onSubmit={e => submitcheck(e)} className = {style.writecomment__form} action="" method = "GET">
+  <label className = {style.writecomment__label} htmlFor="comment"> Write a comment </label>
+  <input className = {style.writecomment__input} type="text" name="comment" id="comment" value = {uiStore.commentMessage} onChange= {e => handleChangeinput(e)} />
   </form>
   </article>
 </>))

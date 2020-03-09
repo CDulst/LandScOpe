@@ -1,0 +1,108 @@
+.post__by {
+    background-image: url("/assets/png/namecard_background.png");
+    background-size: cover;
+  }
+  
+  .postby__wrappers {
+    display: flex;
+    height: 12rem;
+    padding-top: 0.5rem;
+    padding-left: 1.2rem;
+  }
+  .hidden{
+      display:none;
+  }
+  .postby__image {
+    width: 10rem;
+    margin-right: 1rem;
+  }
+  
+  .postby__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem 0;
+  }
+  
+  .postby__name {
+    font-size: 2.3rem;
+    color: white;
+  }
+  
+  .postby__title {
+    font-size: 1rem;
+    color:white;
+    padding-bottom: 1rem;
+  }
+  
+  .postby__link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+    border: solid white 1px;
+    text-align: center;
+    border-radius: 2rem;
+    padding: 0.2rem 4rem;
+    background-color: #705F78;
+    margin-bottom: 1rem;
+  
+  }
+  
+  .like__wrappers {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    padding-bottom: 1rem;
+  }
+  
+  .linkcollect {
+    border: solid white 4px;
+    padding: 0.2rem 2rem;
+    background-color: transparent;
+  }
+  
+  .linkheart {
+    background-color: #B04F4F;
+  }
+  
+  @media only screen and (min-width: 768px) {
+  
+    .post__by {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+    }
+  
+    .linkheart {
+      margin-left: 2rem;
+    }
+  
+    .linkcollect {
+      font-size: 1.8rem;
+      padding: 0.5rem 3rem;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+  
+    .post__by {
+      display: block;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+    }
+  
+    .postby__link {
+      text-decoration: none;
+      color: white;
+      font-size: 1.6rem;
+  
+    }
+
+    .post__by {
+        grid-row: 1;
+        grid-column: 2;
+      }
+  }
+  
