@@ -13,10 +13,10 @@ const Overview = () => {
 <article className = {style.overview}>
 <h2 className = {style.hidden}>Overview</h2>
 <div className = {style.addButton__wrapper}>
-<button className = {style.add__button}> <img src="assets/png/addSymbol.png" alt=""/> <span class = {style.addButton__span}>New Post</span></button>
+<button className = {style.add__button}> <img src="assets/png/addSymbol.png" alt=""/> <span className = {style.addButton__span}>New Post</span></button>
 </div>
 {dataStore.posts.map(post => (
-<LandItem post = {post}/>
+<LandItem key = {post.key} post = {post}/>
 ))}
 </article>
  </>
