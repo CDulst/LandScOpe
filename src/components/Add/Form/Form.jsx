@@ -5,24 +5,23 @@ import {useStores} from "../../../hooks/index"
 import style from "./form.module.css";
 const Form = () => {
   const {uiStore} = useStores();
-  const Description = uiStore.Description;
-  const Category = uiStore.Category;
-  const Location = uiStore.Location;
+
+  const handleSubmit = (e) =>{
+      e.preventDefault();
+      uiStore.AddTag(uiStore.Tag)
+  }
   return useObserver(() => (
    <>
-   {console.log(Description)}
-   {console.log(Location)}
    <form>
-   <FormInput type = "text" labeltext = "Description" placeholder = "A Wild Land" target = {Description}/>
-   <FormInput type = "text" labeltext = "Location" placeholder = "Brussels,Belgium" target = {Location}/>
-   <FormInput type = "select" labeltext = "Category" placeholder = "/" target = {Category}/>
+   <FormInput type = "text" labeltext = "Description" placeholder = "A Wild Land" target = "Description"/>
+   <FormInput type = "text" labeltext = "Location" placeholder = "Brussels,Belgium" target = "Location"/>
+   <FormInput type = "select" labeltext = "Category" placeholder = "/" target = "Category"/>
    </form>
-   <form>
-   <FormInput type = "text" labeltext = "Tags" placeholder = "Trees" value = "/"/>
+   <form onSubmit={e => handleSubmit(e)}>
+   <FormInput type = "text" labeltext = "Tags" placeholder = "Trees" target = "Tag"/>
    </form>
    <div className = {style.button__wrapper}>
-   <button className = {`${style.button} ${style.disabled}`} disabled> Submit</button>
-    
+   <button className = {`${style.button}`} style = {(uiStore.Description === "" || uiStore.Location === "" || uiStore.Category === "" || uiStore.AddTags.length === 0) ? {opacity:"20%", pointerEvents:"none"} : {opacity:"100%", pointerEvents:"auto"} }> Submit</button>
    </div>
    </>
   ))

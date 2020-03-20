@@ -9,8 +9,9 @@ class UiStore {
       this.commentMessage = "";
       this.Description = "";
       this.Location = "";
-      this.Category = "";
-      this.AddTags = [ "Wind", "Swamp"];
+      this.Category = "city life";
+      this.Tag = "";
+      this.AddTags = [];
       this.CATEGORIES = [
         'city life', 'nature life', 'digital', 'culture', 'movie shot'
       ]
@@ -25,10 +26,13 @@ class UiStore {
 
     AddTag(tag){
       this.AddTags.push(tag);
+      this.Tag = "";
     }
 
     RemoveTag(tag){
-      this.AddTags.push(tag);
+      const index = this.AddTags.indexOf(tag);
+      console.log(index);
+      this.AddTags.splice(index,1)
     }
 
     changeCommentMessage(comment){
@@ -46,6 +50,7 @@ class UiStore {
     Description: observable,
     Location: observable,
     Category: observable,
+    Tag: observable,
     AddTags: observable,
     CATEGORIES: observable,
     changeCommentMessage: action,
