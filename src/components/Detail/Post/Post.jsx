@@ -8,15 +8,12 @@ import PropTypes from 'prop-types';
 const Post= () => {
 
     
-    return useObserver(() => (
-    <>
-
-
+return useObserver(() => (
+<>
 <Publisher/>
 <Landscape/>
 <Interaction/>
-
-  </>
+ </>
     ))
 
 }

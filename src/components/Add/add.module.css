@@ -1,0 +1,13 @@
+
+.title__wrapper{
+    display:flex;
+    justify-content:center;
+    background-image: url("/assets/png/background2.png");
+    font-weight: 600;
+}
+.title{
+    font-size: 2.4rem;
+    padding:1.2rem;
+    color:white;
+    font-family:"Montserrat"; 
+}

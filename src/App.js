@@ -15,14 +15,14 @@ const App = () => {
   <Header/>
   <main className = {style.content}>
   <Switch>
+  <Route path = "/Add">
+  <Add/>
+  </Route>
   <Route path = "/:key">
   <Detail/>
   </Route>
   <Route path = "/">
   <Overview/>
-  </Route>
-  <Route path = "/Add">
-  <Add/>
   </Route>
   </Switch>
   </main>

@@ -1,4 +1,13 @@
+
+
 .content{
     background-image:url("/assets/png/namecard_background.png");
-    height:100vh;
+}
+
+@media only screen and (min-width: 1200px) {
+
+.content{
+   height:100vh;
+}
+
 }

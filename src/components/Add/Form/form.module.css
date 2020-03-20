@@ -1,0 +1,21 @@
+form{
+margin-top:2rem;
+}
+.button{
+color:white;
+font-size:2rem;
+background-color:#5D4A6C;
+padding: 1rem 5rem;
+border:white solid 0.4rem;
+border-radius: 10rem;
+}
+.button__wrapper{
+display:flex;
+width:100%;
+justify-content:center;
+margin-top:3rem;
+}
+.disabled{
+pointer-events: none;
+opacity:20%;
+}

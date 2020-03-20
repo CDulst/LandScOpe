@@ -4,7 +4,7 @@ import {useObserver} from 'mobx-react-lite';
 import LandItem from './Landitem/Landitem';
 import {useStores} from "../../hooks/index";
 import style from "./overview.module.css";
-
+import {Link} from 'react-router-dom';
 
 const Overview = () => {
     const {dataStore} = useStores();
@@ -13,7 +13,7 @@ const Overview = () => {
 <article className = {style.overview}>
 <h2 className = {style.hidden}>Overview</h2>
 <div className = {style.addButton__wrapper}>
-<button className = {style.add__button}> <img src="assets/png/addSymbol.png" alt=""/> <span className = {style.addButton__span}>New Post</span></button>
+<Link className = {style.add__button} to = "/Add"> <img src="assets/png/addSymbol.png" alt=""/> <span className = {style.addButton__span}>New Post</span></Link>
 </div>
 {dataStore.posts.map(post => (
 <LandItem key = {post.key} post = {post}/>
