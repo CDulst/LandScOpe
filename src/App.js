@@ -15,7 +15,7 @@ const App = () => {
   <Header/>
   <main className = {style.content}>
   <Switch>
-  <Route path = "/Add">
+  <Route path = "/add">
   <Add/>
   </Route>
   <Route path = "/:key">

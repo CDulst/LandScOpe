@@ -1,4 +1,6 @@
-
+.Add{
+    width:100vw;
+}
 .title__wrapper{
     display:flex;
     justify-content:center;
@@ -11,3 +13,17 @@
     color:white;
     font-family:"Montserrat"; 
 }
+
+@media only screen and (min-width: 1200px) {
+.Add{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 30% 60%;
+
+    
+}
+.title__wrapper{
+   display:none;
+}
+}
+

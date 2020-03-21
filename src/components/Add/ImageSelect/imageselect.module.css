@@ -11,8 +11,6 @@
     align-items:center;
 }
 
-
-
 .Landscape__title{
     font-size:2.2rem;
     font-weight: 800;
@@ -22,3 +20,18 @@
     padding-top:2rem;
     padding-left:1rem;
 }
+
+@media only screen and (min-width: 800px) {
+    .add__Landscape{
+       grid-column:1;
+       grid-row:1;
+       height:100vh;
+    }
+
+.Landscape__title{
+    text-align:center;
+    font-size:3rem;
+}
+
+    }
+    

@@ -12,8 +12,7 @@ class DataStore {
         new Post({user: new User({name: "SilenceOfTheTown", description: "A proud new york photographer", pic: "assets/svg/account-icon3.svg"}), picture: 'assets/webp/landscape_example2.webp', categorie: 'City Life', location: 'USA, new york', description: 'Central Park and snow', tags: ['park', 'snow'], key: v4()}),
         new Post({user: new User({name: "EpicGamer420", description: "A gamer by heart", pic: "assets/svg/account-icon2.svg"}), picture: 'assets/webp/landscape_example3.webp', categorie: 'Digital', location: 'Uncharted 4', description: 'Hanging on tight', tags: ['adventure', 'digital', 'desert', 'village'], key: v4()}),
         new Post({user: new User({name: "EagleVisionJSX", description: "Nothing magical escapes my eyesight", pic: "assets/svg/account-icon4.svg"}), picture: 'assets/webp/landscape_example4.webp', categorie: 'Culture', location: 'Egypt,gaza', description: 'The Mighty Pyramids', tags: ['desert', 'pyramids','sunlight'], key: v4()}),
-        new Post({user: new User({name: "SilenceOfTheTown", description: "A proud new york photographer", pic: "assets/svg/account-icon3.svg"}), picture: 'assets/webp/landscape_example5.webp', categorie: 'Movie Shot', location: 'The Swamp', description: 'Beautiful Swamp', tags: ['swamp', 'mist','sunrise'], key: v4()}),
-        new Post({user: new User({name: "EpicGamer420", description: "A gamer by heart", pic: "assets/svg/account-icon2.svg"}), picture: 'assets/webp/landscape_example6.webp', categorie: 'Nature Life', location: 'USA, Florida', description: 'Scary Forest', tags: ['forest', 'trees','dark'], key: v4()})
+        new Post({user: new User({name: "EpicGamer420", description: "A gamer by heart", pic: "assets/svg/account-icon2.svg"}), picture: 'assets/webp/landscape_example3.webp', categorie: 'Digital', location: 'Uncharted 4', description: 'Hanging on tight', tags: ['adventure', 'digital', 'desert', 'village'], key: v4()}),
       ];
       
   
@@ -22,8 +21,10 @@ class DataStore {
     }
   
   
-    addPost(user, picture, categorie, location, description, tags) {
+    addPost(picture, categorie, location, description, tags) {
+      const user = new User({name: "EagleVisionJSX", description: "Nothing magical escapes my eyesight", pic: "assets/svg/account-icon4.svg"})
       this.posts.push(new Post({user, picture, categorie, location, description, tags}));
+      
     }
   
     changeCurrent(key){

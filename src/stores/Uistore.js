@@ -11,6 +11,7 @@ class UiStore {
       this.Location = "";
       this.Category = "city life";
       this.Tag = "";
+      this.Image = "assets/webp/landscape_example7.webp"
       this.AddTags = [];
       this.CATEGORIES = [
         'city life', 'nature life', 'digital', 'culture', 'movie shot'
@@ -51,6 +52,7 @@ class UiStore {
     Location: observable,
     Category: observable,
     Tag: observable,
+    Image: observable,
     AddTags: observable,
     CATEGORIES: observable,
     changeCommentMessage: action,
