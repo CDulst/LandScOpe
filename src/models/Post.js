@@ -52,7 +52,7 @@ class Post {
     this.likes -= 1;
   }
   
-  linkComment
+
 
   get commentsLength() {
     return this.comments.length;

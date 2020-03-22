@@ -23,7 +23,7 @@ linkPost(post){
 
 }
 
-decorate(Comment, {
+decorate(User, {
   id: observable,
   name: observable,
   pic: observable,

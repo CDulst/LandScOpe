@@ -37,5 +37,7 @@
   },
   "devDependencies": {
     "jest": "^24.9.0"
-  }
+  },
+  "jest": {"collectCoverageFrom": ["src/(models|stores)/**.js","!<rootDir>/node_modules/"],"coverageReporters": ["text"]}
+  
 }
