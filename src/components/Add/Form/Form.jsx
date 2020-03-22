@@ -1,15 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {useObserver} from 'mobx-react-lite';
 import FormInput from './FormInput/FormInput';
 import {useStores} from "../../../hooks/index"
 import {useHistory} from "react-router-dom";
+import Post from "../../../models/Post";
 import {v4} from 'uuid';
 import style from "./form.module.css";
 const Form = () => {
   const {dataStore,uiStore} = useStores();
   const history = useHistory();
   const handleClick = (e) => {
-      dataStore.addPost(uiStore.Image,uiStore.Category,uiStore.Location,uiStore.Description,uiStore.AddTags)
+      new Post ({
+      user: uiStore.currentUser,
+      picture: uiStore.Image,
+      categorie: uiStore.Category,
+      location: uiStore.Location,
+      description: uiStore.Description,
+      tags: uiStore.AddTags,
+      key: v4(),
+      store: dataStore
+      })
       history.push("/");
   }
 

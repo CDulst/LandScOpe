@@ -15,7 +15,7 @@ return useObserver(() => (
   <div className = {`${style.comment__wrappers} ${style.nm__wrapper}`}>
   <div className = {style.comment__wrapper}>
   <img className = {style.comment__image} src="assets/svg/account-icon.svg" alt="account"/>
-  <p className = {style.comment__name}> {user} </p>
+  <p className = {style.comment__name}> {user.name} </p>
   </div>
   <p className = {style.comment__text}> {content} </p>
   </div>

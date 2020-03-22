@@ -3,8 +3,9 @@ import {observable, decorate, configure, action, computed} from 'mobx';
 
 
 class Post {
-  constructor ({user, picture, categorie, location, likes = 0, description, tags, key}) {
+  constructor ({user, picture, categorie, location, likes = 0, description, tags, key,store}) {
     this.user = user;
+    this.user.linkPost(this);
     this.picture = picture;
     this.categorie = categorie;
     this.location = location;
@@ -27,10 +28,16 @@ class Post {
       Confident: 0,
       Overwhelmed: 0,
     };
+    this.store = store;
+    this.store.addPost(this);
   }
 
   addLike() {
     this.likes += 1;
+  }
+
+  linkComment(comment){
+    !this.comments.includes(comment) && this.comments.push(comment);
   }
 
   updateMood(moodkey) {
@@ -44,10 +51,8 @@ class Post {
   removeLike() {
     this.likes -= 1;
   }
-
-  addComment(u, con) {
-    this.comments.push(new Comment({user: u, content:con}));
-  }
+  
+  linkComment
 
   get commentsLength() {
     return this.comments.length;
@@ -70,7 +75,9 @@ decorate(Post, {
   likes: observable,
   comments: observable,
   mood: observable,
+  store: observable,
   addLike: action,
+  linkComment: action,
   removeLike: action,
   addComment: action,
   updateMood: action,
@@ -81,4 +88,4 @@ decorate(Post, {
 configure({enforceActions: 'observed'});
 
 
-export {Post};
+export default Post;

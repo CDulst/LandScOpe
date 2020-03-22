@@ -13,7 +13,7 @@ const Overview = () => {
 <article className = {style.overview}>
 <h2 className = {style.hidden}>Overview</h2>
 <div className = {style.addButton__wrapper}>
-<Link className = {style.add__button} to = "/Add"> <img src="assets/png/addSymbol.png" alt=""/> <span className = {style.addButton__span}>New Post</span></Link>
+<Link className = {style.add__button} to = "/add"> <img src="assets/png/addSymbol.png" alt=""/> <span className = {style.addButton__span}>New Post</span></Link>
 </div>
 {dataStore.posts.map(post => (
 <LandItem key = {post.key} post = {post}/>

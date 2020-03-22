@@ -13,9 +13,7 @@ class UiStore {
       this.Tag = "";
       this.Image = "assets/webp/landscape_example7.webp"
       this.AddTags = [];
-      this.CATEGORIES = [
-        'city life', 'nature life', 'digital', 'culture', 'movie shot'
-      ]
+      this.currentUser = "";
     }
   
   
@@ -36,6 +34,10 @@ class UiStore {
       this.AddTags.splice(index,1)
     }
 
+    setCurrentUser(user){
+      this.currentUser = user;
+    }
+
     changeCommentMessage(comment){
     this.commentMessage = comment;
     }
@@ -54,11 +56,12 @@ class UiStore {
     Tag: observable,
     Image: observable,
     AddTags: observable,
-    CATEGORIES: observable,
+    currentUser: observable,
     changeCommentMessage: action,
     change: action,
     AddTag: action,
-    RemoveTag: action
+    RemoveTag: action,
+    setCurrentUser: action
   });
   
   configure({enforceActions: 'observed'});
