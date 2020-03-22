@@ -20,7 +20,7 @@ const Form = () => {
   return useObserver(() => (
    <>
    <div className = {style.forms__wrapper}>
-   <form>
+   <form className = {style.form}>
    <FormInput type = "text" labeltext = "Description" placeholder = "A Wild Land" target = "Description"/>
    <FormInput type = "text" labeltext = "Location" placeholder = "Brussels,Belgium" target = "Location"/>
    <FormInput type = "select" labeltext = "Category" placeholder = "/" target = "Category"/>

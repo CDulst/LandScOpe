@@ -2,9 +2,10 @@ import React from 'react';
 import {useObserver} from 'mobx-react-lite';
 import {useStores} from "../../../../hooks/index";
 import style from "./formInput.module.css";
+import {CATEGORIES} from "../../../../consts/index";
 const FormInput = ({type,labeltext,placeholder,target}) => {
 const {uiStore} = useStores();
-const categories = uiStore.CATEGORIES
+const categories = CATEGORIES;
 const tags = uiStore.AddTags;
 
 const handleChangeinput = (e) => {

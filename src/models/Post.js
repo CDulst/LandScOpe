@@ -2,40 +2,6 @@ import Comment from './Comment.js';
 import {observable, decorate, configure, action, computed} from 'mobx';
 
 
-
-const MOODS = [
-  [
-    "Confident","assets/svg/moods/Confident.svg"
-  ],
-  [
-    "Dreamy","assets/svg/moods/Dreamy.svg"
-  ],
-  [
-    "Empowered","assets/svg/moods/Empowered.svg"
-  ],
-  [
-    "Excited","assets/svg/moods/Excited.svg"
-  ],
-  [
-    "Lonely","assets/svg/moods/Lonely.svg"
-  ],
-  [
-    "Overwhelmed","assets/svg/moods/Overwhelmed.svg"
-  ],
-  [
-    "Relaxed","assets/svg/moods/Relaxed.svg"
-  ],
-  [
-    "Romantic","assets/svg/moods/Romantic.svg"
-  ],
-  [
-    "Scared","assets/svg/moods/Scared.svg"
-  ],
-  
-    
-]
-
-
 class Post {
   constructor ({user, picture, categorie, location, likes = 0, description, tags, key}) {
     this.user = user;
@@ -115,4 +81,4 @@ decorate(Post, {
 configure({enforceActions: 'observed'});
 
 
-export {MOODS,Post};
+export {Post};

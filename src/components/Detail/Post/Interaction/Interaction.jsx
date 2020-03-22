@@ -5,12 +5,12 @@ import PropTypes from 'prop-types';
 import Mood from './Mood/Mood';
 import Comment from './Comment/Comment';
 import style from "./interaction.module.css";
-import {MOODS} from '../../../../models/Post';
+import {MOODS} from '../../../../consts/index';
 import Inputcomment from './Input/Input';
 import {useStores} from "../../../../hooks/index";
 const Interaction = () => {
 const {dataStore} = useStores();
-const moods = MOODS;
+
    
 return useObserver(() => (
 <>
@@ -19,7 +19,7 @@ return useObserver(() => (
   <article className = {style.mood}>
   <h3 className = {`${style.cm__title} ${style.mood__title}`}> This landscape makes me feel </h3>
   <p className = {style.mood__points}><span className = {style.mood__number}>3</span> Points left</p>
-  {moods.map(mood => (
+  {MOODS.map(mood => (
   <Mood key = {mood[1]} currentpost = {dataStore.currentPost} moodemoji = {mood[1]} moodtitle = {mood[0]} moodnumber = {dataStore.currentPost.mood[mood[0]]} />
   ))}
   </article>
